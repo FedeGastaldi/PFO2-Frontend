@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Federico</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <nav>
+            <div class="menu-toggle">&#9776;</div> <!-- Botón de menú hamburguesa -->
+            <ul>
+                <li><a href="#que-hago">Qué hago</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        
+        <h1>¡Hola, soy Federico!</h1>
+        <p>Desarrollador de Software en formación</p>
+    </header>
+
+    <!-- Sección Sobre mí -->
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>Soy un apasionado de la programación con enfoque en desarrollo web y móvil. Siempre estoy buscando aprender nuevas tecnologías y mejorar mis habilidades. Mi objetivo es crear soluciones tecnológicas que mejoren la vida de las personas.</p>
+    </section>
+
+    <!-- Sección Qué hago -->
+    <section id="que-hago">
+        <h2>Qué hago</h2>
+        <div class="que-hago-bloques">
+            <div class="bloque">
+                <h3>Desarrollo Web</h3>
+                <p>Desarrollo sitios y aplicaciones web dinámicas y responsive utilizando tecnologías modernas como HTML, CSS, JavaScript y React.</p>
+            </div>
+            <div class="bloque">
+                <h3>Desarrollo Móvil</h3>
+                <p>Creación de aplicaciones móviles nativas y multiplataforma con tecnologías como Android Studio y Flutter.</p>
+            </div>
+            <div class="bloque">
+                <h3>Desarrollo Backend</h3>
+                <p>Desarrollo de APIs y servicios backend con Node.js y Nest.js, asegurando escalabilidad y buen rendimiento.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabla de tecnologías -->
+    <section class="skills">
+        <h2>Tecnologías</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tecnologías Conocidas</th>
+                    <th>Lo que Quiero Aprender</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML, CSS, JavaScript, React, Node.js, Tailwind CSS, Vite.js, Nest.js, Android Studio</td>
+                    <td>Flutter, Desarrollo de Videojuegos</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Portfolio de Federico Gastaldi. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
